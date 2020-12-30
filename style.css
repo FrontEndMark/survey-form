@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+body {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: white;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: url(bricks.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    background-color: rgba(54, 0, 0, 0.80);
+    width: 100%;
+    text-align: center;
+}
+
+.header {
+    background-color: white;
+    width: 100%;
+    height: 10rem;
+    padding: 1.5rem;
+}
+
+#mn-logo {
+    height: inherit;
+}
+
+.divisao {
+    width: 100%;
+    height: 1rem;
+    background-color: rgb(7, 56, 0);
+}
+
+.text-center {
+    padding: 30px 0 0 0;
+    font-size: 2.5rem;
+}
+
+.description-text-center {
+    font-size: 1.3rem;
+    font-style: italic;
+    margin-top: -10px;
+    padding-bottom: 10px;
+}
+
+#survey-form {
+    background-color: rgba(51, 0, 0, 0.788);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    height: 100%;
+    border-radius: 0.25rem;
+    padding: 4rem;
+    text-align: left;
+}
+
+@media (max-width: 800px) {
+    #survey-form {
+        width: auto;
+    }
+}
+
+::-webkit-input-placeholder  {
+    color:rgb(170, 170, 170);
+    font-weight: bold;
+    font-size: 1rem;
+    padding-left: 5px;
+}
+
+.form-class {
+    display: block;
+    width: 100%;
+    height: 2.375rem;
+    padding: 0.375rem;
+    border-radius: 0.25rem;
+    margin: 10px 0 30px 0;
+    background-clip: padding-box;
+    border: 0.05rem solid #ffffff;
+}
+
+.form-class:focus {
+    border-color: #8a0000;
+    outline: 0;
+    box-shadow: 0 0 0 0.15rem #8a0000;
+}
+
+label {
+    display: flex;
+    align-items: center;
+}
+
+legend {
+    padding-top: 30px;
+    font-weight: bold;
+}
+
+fieldset {
+    border: none;
+    padding: 10px 0 0 0;
+    line-height: 1.8rem;
+    font-weight: 200;
+}
+
+.clue {
+    margin-left: 0.25rem;
+    font-size: 0.9rem;
+}
+
+.mais-atrai,
+.recomendo {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+
+.text-area {
+    display: block;
+    width: 98.5%;
+    height: 10rem;
+    padding: 0.375rem;
+    border-radius: 0.25rem;
+    margin: 10px 0 30px 0;
+    background-clip: padding-box;
+    border: 0.05rem solid #ffffff;
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(170, 170, 170);
+}
+
+.text-area:focus {
+    border-color: #8a0000;
+    outline: 0;
+    box-shadow: 0 0 0 0.15rem #8a0000;
+}
+
+.coment {
+    padding-top: 2rem;
+}
+
+select {
+    display: block;
+    width: 101.5%;
+    height: 3rem;
+    padding: 0.375rem;
+    border-radius: 0.25rem;
+    margin: 10px 0 30px 0;
+    background-clip: padding-box;
+    border: 0.05rem solid #ffffff;
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(170, 170, 170);
+}
+
+select:focus {
+    border-color: #8a0000;
+    outline: 0;
+    box-shadow: 0 0 0 0.15rem #8a0000;
+}
+
+.submit-button {
+    display: block;
+    width: 100.5%;
+    height: 3rem;
+    margin-top: 2rem;
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    background-color: maroon;
+    border: none;
+    border-radius: 0.25rem;
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    background-color: rgb(7, 56, 0);
+    height: 50px;
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 50px;
+}

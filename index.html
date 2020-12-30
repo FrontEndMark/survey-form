@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="header">
+            <img
+                id="mn-logo"
+                src="mn-logo.png"
+                alt="Logo da MN Tijolos Ecológicos"
+            >
+        </header>
+
+        <div class="divisao"></div>
+
+        <h1
+            id="title"
+            class="text-center">
+            Formulário de Pesquisa MN Tijolos
+        </h1>
+
+        <p
+            id="description"
+            class="description-text-center">
+            Obrigado por nos ajudar a melhorar
+        </p>
+        
+        <form id="survey-form">
+
+            <label id="name-label" for="name">Nome</label>
+                <input
+                    class="form-class"
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Digite seu nome"
+                    required
+                >
+
+            <label id="email-label" for="email">E-mail</label>
+                <input
+                    class="form-class"
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Digite seu e-mail"
+                    required
+                >
+
+            <label id="number-label" for="number">Idade<span class="clue">(opcional)</span></label> 
+                <input
+                    class="form-class"
+                    type="number"
+                    name="number"
+                    id="number"
+                    min="10"
+                    max="99"
+                    placeholder="Idade"
+                >
+
+            <label for="dropdown">Qual opção descreve melhor sua situação atual?</label>
+            <select id="dropdown" name="role" class="" required>
+                <option disabled selected value>Selecione uma opção</option>
+                <option value="Interessado">interessado</option>
+                <option value="Profissional da construção civil">Profissional da construção civil</option>
+                <option value="Engenheiro / Arquiteto">Engenheiro / Arquiteto</option>
+                <option value="Cliente final">Cliente final</option>
+                <option value="Outro">Outro</option>
+            </select>
+
+            <fieldset>
+
+                <legend>Você recomendaria o Tijolo Ecológico a um amigo?</legend>
+                
+                <label for="certeza">
+                    <input
+                        type="radio"
+                        name="recomendacao"
+                        id="certeza"
+                        class="recomendo"
+                        value="certeza"
+                        checked
+                    >
+                    Com certeza
+                </label>
+
+                <label for="Talvez">
+                    <input
+                        type="radio"
+                        name="recomendacao"
+                        id="talvez"
+                        class="recomendo"
+                        value="talvez"
+                    >
+                    Talvez
+                </label>
+
+                <label for="nao-tenho-certeza">
+                    <input
+                        type="radio"
+                        name="recomendacao"
+                        id="nao-tenho-certeza"
+                        class="recomendo"
+                        value="nao-tenho-certeza"
+                    >
+                    Não tenho certeza
+                </label>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>O que mais te atrai no Tijolo Ecológico</legend>
+                
+                <label for="mao-de-obra">
+                <input
+                    type="checkbox"
+                    name="mais-atrai"
+                    id="mao-de-obra"
+                    class="mais-atrai"
+                    value="mao-de-obra"
+                >A economia na mão de obra</label>
+                
+                <label for="material">
+                <input
+                    type="checkbox"
+                    name="mais-atrai"
+                    id="material"
+                    class="mais-atrai"
+                    value="material"
+                > A economia de material</label>
+
+                <label for="rapidez">
+                <input
+                    type="checkbox"
+                    name="mais-atrai"
+                    id="rapidez"
+                    class="mais-atrai"
+                    value="rapidez"
+                > Rapidez na construção</label>
+
+                <label for="termo-acustico">
+                <input
+                    type="checkbox"
+                    name="mais-atrai"
+                    id="termo-acustico"
+                    class="mais-atrai"
+                    value="termo-acustico"
+                > O sistema termo-acústico</label>
+                
+                <label for="modular">
+                <input
+                    type="checkbox"
+                    name="mais-atrai"
+                    id="modular"
+                    class="mais-atrai"
+                    value="modular"
+                > A forma modular de construção</label>
+
+                <label for="resistencia">
+                <input
+                    type="checkbox"
+                    name="mais-atrai"
+                    id="resistencia"
+                    class="mais-atrai"
+                    value="resistencia"
+                > A maior resistência da construção</label>
+
+            </fieldset>
+
+            <label for="form-area" class="coment">Algum comentário ou sugestão?</label>
+            <textarea
+                name="form-area"
+                id="form-area"
+                class="text-area"
+                placeholder=""
+            >
+            Digite aqui seu comentário...
+            </textarea>
+
+            <button 
+                id="submit"
+                class="submit-button">
+                Enviar
+            </button>
+
+        </form>
+        
+        <footer>&copy; 2020 FrontEndMark</footer>
+
+    </div>
+
+</body>
+
+</html>
